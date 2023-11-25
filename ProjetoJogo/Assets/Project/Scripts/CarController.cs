@@ -2,7 +2,7 @@ using UnityEngine;
 using System;
 
 public class CarController : MonoBehaviour{
-    public enum Axel{
+   /* public enum Axel{
         Front,
         Rear
     }
@@ -20,4 +20,5 @@ public class CarController : MonoBehaviour{
     public List<Wheel> wheels;
 
     float moveInput;
+   */
 }
