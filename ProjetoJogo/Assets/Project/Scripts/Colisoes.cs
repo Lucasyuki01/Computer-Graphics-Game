@@ -61,5 +61,6 @@ public class Colisoes : MonoBehaviour
     public void Update()
     {
         txtPontos.text = "Pontos: " + pontos;
+            
     }
 }
