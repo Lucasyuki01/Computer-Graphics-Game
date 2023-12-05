@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - SinalVermelho
+  - ColisorLimite
+  - ColisorRua
+  - ColisorCalcada
   layers:
   - Default
   - TransparentFX

@@ -32,10 +32,22 @@ public class Colisoes : MonoBehaviour
 
             case "SinalVermelho":
                 print("Passou no sinal vermelho");
-                pontos = pontos - 1;
+                pontos = pontos - 5;
                 break;
+
+            case "SinalVerde":
+                pontos = pontos + 1;
+                break;
+
+            case "SinalAmarelo":
+                break;
+
+            case "ColisorCalcada":
+                print("Subiu na calçada");
+                pontos = pontos -5;
+                break;
+
             default:
-                
                 break;
         }
     }
