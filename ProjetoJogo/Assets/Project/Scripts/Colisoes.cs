@@ -6,11 +6,16 @@ using UnityEngine.UI;
 
 public class Colisoes : MonoBehaviour
 {
+    
     int pontos = 100;
-    [Header("UI")]
+    
     public TextMeshProUGUI txtPontos;
     // Start is called before the first frame update
 
+    public void Start(){
+        
+       
+   }
 
     private void OnCollisionEnter(Collision collision){
 
@@ -21,10 +26,12 @@ public class Colisoes : MonoBehaviour
 
            
             default:
+                pontos = pontos - 5;
                 print("Bateu em alguma coisa");
                 break;
         }
     }
+
     public void OnTriggerEnter(Collider other)
     {
         switch (other.gameObject.tag)
@@ -36,7 +43,7 @@ public class Colisoes : MonoBehaviour
                 break;
 
             case "SinalVerde":
-                pontos = pontos + 1;
+                pontos = pontos + 2;
                 break;
 
             case "SinalAmarelo":
