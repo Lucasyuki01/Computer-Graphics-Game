@@ -125,7 +125,7 @@ public class PrometeoCarController : MonoBehaviour
     //CAR DATA
 
       [HideInInspector]
-      public float carSpeed; // Used to store the speed of the car.
+      public static float carSpeed; // Used to store the speed of the car.
       [HideInInspector]
       public bool isDrifting; // Used to know whether the car is drifting or not.
       [HideInInspector]

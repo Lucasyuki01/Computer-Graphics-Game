@@ -9,6 +9,8 @@ TagManager:
   - ColisorRua
   - ColisorCalcada
   - Semaforo1
+  - ContraMao
+  - ColisorRuaX
   layers:
   - Default
   - TransparentFX
