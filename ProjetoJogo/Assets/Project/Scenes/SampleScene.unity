@@ -1171,6 +1171,7 @@ MonoBehaviour:
   luzVermelha: {fileID: 608695404}
   luzVerde: {fileID: 468700496}
   luzAmarela: {fileID: 136621388}
+  colisorSemaforo: {fileID: 1457738217}
 --- !u!1 &1457738216
 GameObject:
   m_ObjectHideFlags: 0

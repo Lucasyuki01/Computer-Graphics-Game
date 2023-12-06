@@ -36,7 +36,7 @@ public class Semaforo : MonoBehaviour
         colisorSemaforo.enabled = true;
         luzAmarela.enabled = false;
         luzVermelha.enabled = !luzVermelha.enabled;
-        yield return new WaitForSeconds(7);
+        yield return new WaitForSeconds(15);
         StartCoroutine(PiscarLuzVerde());
     }
     IEnumerator PiscarLuzVerde()
