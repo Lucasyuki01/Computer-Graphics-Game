@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class Objetivos : MonoBehaviour
 {
-    public GameObject objHospital, objMAC, objPadaria;
+    public GameObject objHospital, objMAC, objPadaria, CanvaHospital, CanvaMAC, CanvaFinal;
     public Light Hospital, mac, padaria;
     public TextMeshProUGUI txtObj;
     
@@ -42,6 +42,7 @@ public class Objetivos : MonoBehaviour
                 objMAC.GetComponent<MeshRenderer>().enabled = true;
                 objMAC.GetComponent<BoxCollider>().enabled = true;
                 mac.enabled = true;
+                CanvaMAC.SetActive(true);
                 break;
             case "Mac":
                 txtObj.text = "VÁ ATÉ O HOSPITAL";
