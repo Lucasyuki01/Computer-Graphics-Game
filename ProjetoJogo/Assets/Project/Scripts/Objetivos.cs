@@ -30,8 +30,11 @@ public class Objetivos : MonoBehaviour
         {
 
             case "Hospital":
-                
-                
+                objHospital.GetComponent<MeshRenderer>().enabled = false;
+                objHospital.GetComponent<BoxCollider>().enabled = false;
+                Hospital.enabled = false;
+                CanvaFinal.SetActive(true);
+                txtObj.text = "";
                 break;
 
             case "Padaria":

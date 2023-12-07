@@ -14,6 +14,7 @@ public class Colisoes : MonoBehaviour{
     private bool tempoVelocidade = true;
     private float speed;
     public Rigidbody target;
+    public GameObject CanvaPerdeu;
 
     
     // Start is called before the first frame update
@@ -26,7 +27,7 @@ public class Colisoes : MonoBehaviour{
 
             case "Cleitinho":
 
-                Application.Quit();
+                pontos = pontos - 100;
                 Debug.Log("Bateu");
 
                 break;
@@ -68,6 +69,10 @@ public class Colisoes : MonoBehaviour{
                 StartCoroutine(EsperarVelocidade());
                 tempoVelocidade = !tempoVelocidade;
             }
+        }
+        if(pontos <= 0)
+        {
+            CanvaPerdeu.SetActive(true);
         }
 
     }
