@@ -18,6 +18,7 @@ TagManager:
   - Hospital
   - Padaria
   - Mac
+  - UltraGrass
   layers:
   - Default
   - TransparentFX

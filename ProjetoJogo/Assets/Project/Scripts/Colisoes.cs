@@ -14,7 +14,7 @@ public class Colisoes : MonoBehaviour{
     private bool tempoVelocidade = true;
     private float speed;
     public Rigidbody target;
-    public GameObject CanvaPerdeu;
+    public GameObject CanvaPerdeu, carro;
 
     
     // Start is called before the first frame update
@@ -73,6 +73,8 @@ public class Colisoes : MonoBehaviour{
         if(pontos <= 0)
         {
             CanvaPerdeu.SetActive(true);
+            //carro.SetActive(false);
+
         }
 
     }

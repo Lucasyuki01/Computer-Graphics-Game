@@ -19,7 +19,7 @@ public class Objetivos : MonoBehaviour
         objHospital.GetComponent<MeshRenderer>().enabled = false;
         mac.enabled = false;
         Hospital.enabled = false;
-        txtObj.text = "VÁ ATÉ A PADARIA";
+        txtObj.text = "VA ATE A PADARIA";
         
         
 
@@ -38,7 +38,7 @@ public class Objetivos : MonoBehaviour
                 break;
 
             case "Padaria":
-                txtObj.text = "VÁ ATÉ O MAC";
+                txtObj.text = "VA ATE O MAC";
                 objPadaria.GetComponent<BoxCollider>().enabled = false;
                 objPadaria.GetComponent<MeshRenderer>().enabled = false;
                 padaria.enabled = false;
@@ -48,13 +48,15 @@ public class Objetivos : MonoBehaviour
                 CanvaMAC.SetActive(true);
                 break;
             case "Mac":
-                txtObj.text = "VÁ ATÉ O HOSPITAL";
+                txtObj.text = "VA ATE O HOSPITAL";
                 objMAC.GetComponent<BoxCollider>().enabled = false;
                 objMAC.GetComponent<MeshRenderer>().enabled = false;
                 mac.enabled = false;
                 objHospital.GetComponent<MeshRenderer>().enabled = true;
                 objHospital.GetComponent<BoxCollider>().enabled = true;
                 Hospital.enabled = true;
+                CanvaHospital.SetActive(true);
+                print("teste");
                 break;
 
             default:
