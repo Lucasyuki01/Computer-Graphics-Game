@@ -55,6 +55,8 @@ public class Colisoes : MonoBehaviour{
         
         posicaoAnterior = transform.position;
     }
+
+    
 }
 
 // Calcular a velocidade de entrada
