@@ -11,6 +11,13 @@ TagManager:
   - Semaforo1
   - ContraMao
   - ColisorRuaX
+  - Cleitinho
+  - ColisorRua-X
+  - ColisorRua-Z
+  - ColisorRuaZ
+  - Hospital
+  - Padaria
+  - Mac
   layers:
   - Default
   - TransparentFX
