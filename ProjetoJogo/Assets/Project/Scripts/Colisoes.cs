@@ -139,6 +139,8 @@ public class Colisoes : MonoBehaviour{
 
 
     }
+
+    
 }
    
 // Calcular a velocidade de entrada
